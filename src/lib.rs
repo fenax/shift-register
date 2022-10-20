@@ -1,6 +1,11 @@
 #![no_std]
 
-mod input;
+pub mod input;
+
+pub trait CycleDelay{
+    fn delay();
+}
+
 
 #[cfg(test)]
 mod tests {
